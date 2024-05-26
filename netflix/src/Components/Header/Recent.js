@@ -2,18 +2,10 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { Link } from 'react-router-dom'
 
-
-
-
-
-
 const Card = ({ img }) => (
-
   <img className='cardMusic' src={img} alt='cover' />
 
-
 )
-
 
 const Row = ({
 
@@ -24,8 +16,6 @@ const Row = ({
 
   <div className='music'>
     <h2>{title}</h2>
-
-
 
     <div>
 
@@ -38,20 +28,12 @@ const Row = ({
       }
 
     </div>
-
-
   </div>
 )
-
-
-
-
 
 const Recent = () => {
 
   const [recentMovie, setRecentMovie] = useState([])
-
-
   useEffect(() => {
 
     const fetchRecent = async () => {
@@ -60,21 +42,13 @@ const Recent = () => {
 
     };
 
-
     fetchRecent();
 
   }, [])
-
-
   return (
 
-
-
-    <div className='return'>
-
+<div className='return'>
       <Row title={"Trending"} arr={recentMovie} />
-
-
     </div>
   )
 }

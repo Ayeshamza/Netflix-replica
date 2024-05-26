@@ -31,7 +31,7 @@ const Card = ({img})=>(
                   
                   {
                     arr.map((item, i)=>(
-                      <Link to={`/movie/${item.id}`} style={{textDecoration:"none", color:"white"}}>
+                      <Link to={`/movie/${item.id} `} style={{textDecoration:"none", color:"white"}}>
                       <  Card key={i} img={`https://image.tmdb.org/t/p/original/${item?item.poster_path:""}`} />
                       </Link>                       
                     ))
@@ -69,6 +69,7 @@ const Music = () => {
   return (
 
 
+    
   
     <div className='return'>
       

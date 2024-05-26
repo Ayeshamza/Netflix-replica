@@ -16,8 +16,8 @@ const Header = () => {
 
 
     <nav className='header'>
-     
-        <img src={logo} alt='logo' />
+
+      <img src={logo} alt='logo' />
 
 
 
